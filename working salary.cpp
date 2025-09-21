@@ -22,17 +22,15 @@ int main() {
         gross_pay = regular_pay + overtime_pay;
     }
     
-    // Calculate taxes based on progressive tax structure
     if (gross_pay <= 600) {
-        taxes = gross_pay * 0.15;  // 15% on first $600
+        taxes = gross_pay * 0.15;  
     } else {
-        taxes = (600 * 0.15) + ((gross_pay - 600) * 0.20);  // 15% on first $600, 20% on rest
+        taxes = (600 * 0.15) + ((gross_pay - 600) * 0.20); 
     }
     
     // Calculate net pay
     net_pay = gross_pay - taxes;
     
-    // Display results with proper formatting
     cout << fixed << setprecision(2);
     cout << "\n--- Pay Summary ---" << endl;
     cout << "Hours worked: " << hours_worked << endl;
@@ -42,4 +40,5 @@ int main() {
     cout << "Net pay: $" << net_pay << endl;
     
     return 0;
+
 }
