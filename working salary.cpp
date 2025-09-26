@@ -25,7 +25,11 @@ int main() {
     if (gross_pay <= 600) {
         taxes = gross_pay * 0.15;  
     } else {
+
         taxes = (600 * 0.15) + ((gross_pay - 600) * 0.20); 
+
+        taxes = (600 * 0.15) + ((gross_pay - 600) * 0.20);  
+
     }
     
     // Calculate net pay
